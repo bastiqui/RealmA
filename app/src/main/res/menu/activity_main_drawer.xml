@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_list"
+            android:icon="@drawable/ic_format_list"
+            android:title="Llistar" />
+        <item
+            android:id="@+id/nav_add"
+            android:icon="@drawable/ic_add"
+            android:title="Afegir" />
+        <item
+            android:id="@+id/nav_find"
+            android:icon="@drawable/ic_find_in_page_black_24dp"
+            android:title="Buscar" />
+    </group>
+
+
+</menu>

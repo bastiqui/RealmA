@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewPerson"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/newDni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/dni"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/newName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nom"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/newSurname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/cognom"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/newAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edat" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/genere_tv"/>
+
+    <RadioGroup
+        android:id="@+id/radioNewPerson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/radioButtonM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/m"
+            android:checked="true"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/radioButtonF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/f"
+            android:checked="false"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/addPerson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/afegir" />
+
+</LinearLayout>
