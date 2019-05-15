@@ -6,6 +6,7 @@ import io.realm.annotations.Required;
 
 public class Persona extends RealmObject {
 
+
     @PrimaryKey
     private String dni;
     private String name, surname;
