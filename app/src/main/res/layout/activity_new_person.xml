@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,63 +7,108 @@
     tools:context=".NewPerson"
     android:orientation="vertical">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:text="Afegir Persona"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
         android:id="@+id/newDni"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="16dp"
         android:hint="@string/dni"
-        android:inputType="text" />
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/newAge"
+        app:layout_constraintTop_toBottomOf="@+id/newName"
+        tools:layout_editor_absoluteX="0dp" />
 
     <EditText
         android:id="@+id/newName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="219dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="116dp"
         android:hint="@string/nom"
-        android:inputType="text"/>
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/newSurname"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="179dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="13dp"
         android:hint="@string/cognom"
-        android:inputType="text"/>
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/newName"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/newAge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/edat" />
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:hint="@string/edat"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/newDni"
+        tools:layout_editor_absoluteX="-13dp" />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/genere_tv"/>
+        android:id="@+id/textView3"
+        android:layout_width="406dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/genere_tv"
+        app:layout_constraintBottom_toTopOf="@+id/radioNewPerson"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newAge" />
 
     <RadioGroup
         android:id="@+id/radioNewPerson"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
 
         <android.support.v7.widget.AppCompatRadioButton
             android:id="@+id/radioButtonM"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/m"
-            android:checked="true"/>
+            android:checked="true"
+            android:text="@string/m" />
 
         <android.support.v7.widget.AppCompatRadioButton
             android:id="@+id/radioButtonF"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/f"
-            android:checked="false"/>
+            android:checked="false"
+            android:text="@string/f" />
 
     </RadioGroup>
 
     <Button
         android:id="@+id/addPerson"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/afegir" />
+        android:layout_width="199dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="196dp"
+        android:text="@string/afegir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>

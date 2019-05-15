@@ -2,13 +2,13 @@ package com.example.realm1;
 
 import io.realm.RealmObject;
 import io.realm.annotations.PrimaryKey;
+import io.realm.annotations.Required;
 
 public class Persona extends RealmObject {
 
     @PrimaryKey
     private String dni;
-
-    private String name,surname;
+    private String name, surname;
     private int age;
     private String gender;
 

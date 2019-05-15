@@ -23,7 +23,11 @@ public class ListPersonaAdapter extends RealmBaseAdapter<Persona> implements Lis
     }
 
     private static class ViewHolder{
-        TextView dni,name,surname,gender,age;
+        TextView dni;
+        TextView name;
+        TextView surname;
+        TextView gender;
+        TextView age;
         ImageButton btn_delete;
     }
 

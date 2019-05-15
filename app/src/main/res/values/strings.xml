@@ -24,7 +24,7 @@
     <string name="m">M</string>
     <string name="f">F</string>
     <string name="edat_tx">EDAT:</string>
-    <string name="buscar">BUSCAR</string>
+    <string name="buscar">Buscar Persona</string>
     <string name="desde">DESDE</string>
     <string name="fins_a">FINS A</string>
 </resources>
