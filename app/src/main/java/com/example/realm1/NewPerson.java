@@ -33,7 +33,7 @@ public class NewPerson extends AppCompatActivity {
                 String gender = r.getText().toString();
 
                 if (dni.getText().toString().isEmpty()){
-                    Toast.makeText(getApplicationContext(),"Falta el DNI",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"No esta el DNI",Toast.LENGTH_SHORT).show();
                 } else {
                     Realm realm = Realm.getDefaultInstance();
                     realm.beginTransaction();
