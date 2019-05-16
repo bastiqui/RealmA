@@ -23,7 +23,6 @@ public class NewPerson extends AppCompatActivity {
             public void onClick(View v) {
                 EditText dni = findViewById(R.id.newDni);
                 EditText name = findViewById(R.id.newName);
-                EditText surname = findViewById(R.id.newSurname);
                 EditText age = findViewById(R.id.newAge);
 
                 RadioGroup radioButtonGroup = findViewById(R.id.radioNewPerson);
@@ -39,8 +38,7 @@ public class NewPerson extends AppCompatActivity {
                     Realm realm = Realm.getDefaultInstance();
                     realm.beginTransaction();
                     Persona persona = realm.createObject(Persona.class, dni.getText().toString());
-                    persona.setName(name.getText().toString());
-                    persona.setSurname(surname.getText().toString());
+                    persona.setFullName(name.getText().toString());
                     persona.setAge(Integer.parseInt(age.getText().toString()));
                     persona.setGender(gender);
                     realm.commitTransaction();

@@ -34,25 +34,14 @@
 
     <EditText
         android:id="@+id/newName"
-        android:layout_width="219dp"
-        android:layout_height="65dp"
+        android:layout_width="399dp"
+        android:layout_height="51dp"
         android:layout_marginTop="116dp"
+        android:layout_marginEnd="8dp"
         android:hint="@string/nom"
         android:inputType="text"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/newSurname"
-        android:layout_width="179dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="116dp"
-        android:layout_marginEnd="13dp"
-        android:hint="@string/cognom"
-        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/newName"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText

@@ -18,11 +18,10 @@ public class Migration implements RealmMigration {
         Version 0
 
         class Persona
-         @PrimaryKey @Required
+         @PrimaryKey
           private String dni;
-         @Required
+         @Required @Index
           private String name;
-         @Required
           private String surname;
           private int age;
           private String gender;
@@ -33,7 +32,7 @@ public class Migration implements RealmMigration {
         class Persona
         @PrimaryKey @Required
         private String dni;
-        @Required
+        @Required @Index
         private String fullName;
         private int age;
         private String gender;

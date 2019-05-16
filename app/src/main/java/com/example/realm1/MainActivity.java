@@ -44,8 +44,7 @@ public class MainActivity extends AppCompatActivity
         realm.beginTransaction();
 
         Persona persona = realm.createObject(Persona.class, UUID.randomUUID().toString());
-        persona.setName("Adria ");
-        persona.setSurname("Gonzalez");
+        persona.setFullName("Adria Gonzalez");
         persona.setAge(21);
         persona.setGender("M");
 

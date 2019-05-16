@@ -14,13 +14,12 @@
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
     <string name="dni">DNI</string>
-    <string name="nom">NOM</string>
-    <string name="cognom">COGNOM</string>
+    <string name="nom">NOM COMPLET</string>
     <string name="edat">EDAT</string>
     <string name="genere">GENERE</string>
     <string name="afegir">AFEGIR</string>
     <string name="editar">EDITAR</string>
-    <string name="genere_tv">GENERE:</string>
+    <string name="genere_tv">GENERO:</string>
     <string name="m">M</string>
     <string name="f">F</string>
     <string name="edat_tx">EDAT:</string>
